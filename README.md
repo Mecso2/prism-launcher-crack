@@ -1,0 +1,5 @@
+- Apply the patch to the source code
+- Build it for your platform of choice
+- Launch it
+- Add an offline profile
+- Have fun

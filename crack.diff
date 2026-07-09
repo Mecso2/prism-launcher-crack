@@ -1,0 +1,25 @@
+diff --git a/launcher/LaunchController.cpp b/launcher/LaunchController.cpp
+index 2b882338c..7425dc89f 100644
+--- a/launcher/LaunchController.cpp
++++ b/launcher/LaunchController.cpp
+@@ -151,7 +151,7 @@ LaunchDecision LaunchController::decideLaunchMode()
+     }
+ 
+     if (!accountToCheck) {
+-        m_actualLaunchMode = LaunchMode::Demo;
++        //m_actualLaunchMode = LaunchMode::Demo;
+         return LaunchDecision::Continue;
+     }
+ 
+diff --git a/launcher/minecraft/auth/AccountList.cpp b/launcher/minecraft/auth/AccountList.cpp
+index 418ba98d2..cc87618f1 100644
+--- a/launcher/minecraft/auth/AccountList.cpp
++++ b/launcher/minecraft/auth/AccountList.cpp
+@@ -591,6 +591,7 @@ void AccountList::setListFilePath(QString path, bool autosave)
+ 
+ bool AccountList::anyAccountIsValid()
+ {
++    return true;
+     for (auto account : m_accounts) {
+         if (account->ownsMinecraft()) {
+             return true;
